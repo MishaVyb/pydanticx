@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "PydanticX"
+version = "0.1.0"
+description = "An efficient HTTP Client built with Pydantic and HTTPX under the hood"
+authors = ["vbrn.mv@gmail.com"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+tox = "^4.0.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
